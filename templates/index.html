@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+</head>
+<body>
+传过来的数据: {{ message }}<br><br>
+{#{{ books }}#}
+{% for book in books %}
+    <li>{{ book }}, 出版时间{{ book.bpub_date }}</li><br>
+{% endfor %}
+
+</body>
+</html>
